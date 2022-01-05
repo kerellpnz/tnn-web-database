@@ -1,0 +1,39 @@
+<beans:beans xmlns="http://www.springframework.org/schema/security"
+             xmlns:beans="http://www.springframework.org/schema/beans"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/security
+        https://www.springframework.org/schema/security/spring-security.xsd">
+
+    <beans:bean id="passwordEncoder" class="org.springframework.security.crypto.password.NoOpPasswordEncoder" />
+
+    <http pattern="/resources/**" security="none"/>
+
+    <http>
+        <intercept-url pattern="/tcp/*/delete/*" access="hasAuthority('ADMIN')" />
+        <intercept-url pattern="/**/delete/**" access="hasAnyAuthority('ADMIN', 'MANAGER')" />
+        <intercept-url pattern="/tcp/**" access="hasAnyAuthority('ADMIN', 'MANAGER')" />
+        <intercept-url pattern="/Specifications/**" access="isAuthenticated()" />
+        <intercept-url pattern="/entity/**" access="isAuthenticated()" />
+        <intercept-url pattern="/journalReport/**" access="isAuthenticated()" />
+        <intercept-url pattern="/FOMReport/**" access="isAuthenticated()" />
+        <intercept-url pattern="/**" access="permitAll" />
+        <form-login login-page="/login"/>
+        <access-denied-handler error-page="/access-denied" />
+    </http>
+
+<!--    <beans:bean id="customAuthenticationSuccessHandler"-->
+<!--                class="com.kerellpnz.tnnwebdatabase.CustomAuthenticationSuccessHandler" />-->
+
+    <authentication-manager>
+        <authentication-provider>
+            <password-encoder ref="passwordEncoder" />
+            <jdbc-user-service data-source-ref="myDataSource"
+                users-by-username-query="select Login, Password, Enabled from inspectors where Login = ?"
+                authorities-by-username-query="select Login, Role from inspectors where Login = ?"
+            />
+        </authentication-provider>
+    </authentication-manager>
+    <beans:import resource="tnn-web-database-servlet.xml"/>
+</beans:beans>

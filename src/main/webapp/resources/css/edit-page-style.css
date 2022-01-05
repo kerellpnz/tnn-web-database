@@ -1,0 +1,284 @@
+@charset "UTF-8";
+
+.wrapper {
+  border: solid 1px #225DA0;
+  border-radius: 0 0 5px 5px;
+  min-width: 1000px;
+  /*overflow: hidden;*/
+  display: flex;
+  flex-direction: column; }
+
+/*.content-edit-page {*/
+/*  -webkit-box-flex: 1;*/
+/*  -ms-flex: 1 1 auto;*/
+/*  flex: 1 1 auto;*/
+/*  background-color: #fff; }*/
+
+.header {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 5px; }
+
+.characteristics__header {
+  padding-bottom: 5px;
+}
+
+.help-block {
+  color: red;
+}
+
+.characteristics {
+  background-color: #fff;
+  padding: 10px 50px; }
+
+.characteristics__row {
+  display: flex;
+  justify-content: space-between; }
+
+
+table th {
+  text-align: center;
+}
+
+
+.tab-control {
+  background-color: #fff;
+  padding: 5px 50px;
+  border-top: 1px solid #225DA0;
+  /*overflow: auto;*/
+}
+
+/*.main-details__row {*/
+/*  display: -webkit-box;*/
+/*  display: -ms-flexbox;*/
+/*  display: flex;*/
+/*  -webkit-box-pack: justify;*/
+/*  -ms-flex-pack: justify;*/
+/*  justify-content: space-between; }*/
+
+/*.main-details__table label {*/
+/*  font-weight: 700; }*/
+
+.comment {
+  background-color: #fff;
+  padding: 10px 50px;
+  border-top: 1px solid #225DA0; }
+
+
+
+.bottom-bar {
+  background-color: #fff;
+  padding: 10px 50px;
+  border-top: 1px solid #225DA0; }
+
+.bottom-bar__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content:space-between; }
+
+.bottom-bar__button {
+  background-color: #225DA0;
+  color: #fff;
+  width: 250px;
+  height: 40px;
+  border: 1px solid #666;
+  border-radius: 5px;
+  padding: 4px;
+  font-size: 14px; }
+.bottom-bar__button:hover {
+  background-color: #1E426B; }
+
+.back-button {
+  background-color: #ccc;
+  color: #000;
+}
+
+.back-button:hover {
+  color: #fff;
+}
+
+.tcp-row {
+  max-width: 600px;
+  padding-top: 10px;
+  padding-left: 50px;
+  padding-bottom: 10px;
+}
+
+.control-label {
+  margin-right: 20px;
+}
+
+.tcp-row__body {
+  display: flex;
+  justify-content:flex-start;
+  align-items:center;
+}
+.tcp-row__button{
+  margin-left: 20px;
+  width: 200px;
+  height: 35px;
+  font-size: 12px; }
+
+.tcp-row__label {
+  padding-bottom: 15px;
+  width: 150px;
+}
+
+.equipment {
+  background-color: #fff;
+  border-top: 1px solid #225DA0;
+}
+
+.equipment-row {
+  padding: 10px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.equipment-valve__row {
+  min-width: 1600px;
+  padding-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.equipment-row__body {
+  min-width: 600px;
+  display: flex;
+  align-items:center;
+  padding: 20px;
+}
+.equipment-row__button{
+  margin-left: 10px;
+  margin-bottom: 5px;
+  width: 70px;
+  height: 32px;
+  font-size: 11px; }
+
+.selectize {
+
+}
+
+.assembly-select {
+  font-size: 12px;
+}
+
+.date-column {
+  width: 100px;
+  text-align: center;
+}
+
+.point-column {
+  width: 80px;
+  text-align: center;
+}
+
+.description-textarea {
+  min-width: 400px;
+  min-height: 50px;
+  max-height: 900px;
+  height: auto;
+}
+
+.description-column {
+  min-width: 400px;
+  text-align: left;
+  white-space: pre-line;
+}
+
+.placeOfControl-column {
+  width: 130px;
+  text-align: center;
+}
+
+.documents-column {
+  width: 130px;
+  text-align: center;
+}
+
+.inspector-column {
+  width: 120px;
+  text-align: left;
+}
+
+.status-column {
+  width: 120px;
+  text-align: center;
+}
+
+.remark-column {
+  width: 160px;
+  text-align: center;
+}
+
+.remark-input {
+  width: 150px;
+  text-align: left;
+}
+
+.remark-span {
+  font-size: 12px;
+}
+
+.journalNumber-column {
+  text-align: center;
+  width: 100px;
+}
+
+.comment-column {
+  width: 100px;
+  text-align: left;
+}
+
+.date-column,
+.point-column,
+.description-textarea,
+.description-column,
+.placeOfControl-column,
+.documents-column,
+.inspector-column,
+.status-column,
+.remark-column,
+.remark-input,
+.journalNumber-column,
+.comment-column {
+  font-size: 12px;
+  color: #000;
+}
+
+.empty {
+  color: #ccc;
+}
+
+.btn-danger{
+  font-size: 0;
+  color: #d9534f;
+}
+
+.btn-danger:hover{
+  color: #c9302c;
+}
+
+.tab-style {
+  color: #225DA0;
+}
+
+.tcp-description {
+  white-space: pre-line;
+}
+
+.test {
+  border: solid 1px #000;
+}

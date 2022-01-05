@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebContextManager">
+    <option name="state">
+      <map>
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF" value="file://$PROJECT_DIR$/src/main/webapp" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/error.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/gate-valve-editView.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/index.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/tcp/tcp-view.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/tcp" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/unit/detail/bugel-editView.jsp" value="file://$PROJECT_DIR$/src/main/webapp" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/unit/detail/case-bottom-editView.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/unit/detail" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/unit/material/metal-material-editView.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/unit/material" />
+      </map>
+    </option>
+  </component>
+</project>
