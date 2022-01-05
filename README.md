@@ -1,6 +1,6 @@
-#TNN WEB DataBase by Kerellpnz
+# TNN WEB DataBase by Kerellpnz
 
-###Created in Intellij IDEA. Uses a pre-installed Tomcat 9.
+### Created in Intellij IDEA. Uses a pre-installed Tomcat 9.
 
 To getting started run MySQL script from project root.
 
@@ -10,9 +10,9 @@ Login data with different access roles are in the table '**_inspectors_**' in da
 
 Change connection settings in _**tnn-web-database-servlet.xml**_ file if you want.
 
-##About this project
+## About this project
 
 This solution was designed to optimize the work process of the engineering department, which controls the manufacture of supervised products.
 
 
-###Downloaded from [GitHub](https://github.com/kerellpnz?tab=repositories).
+### Downloaded from [GitHub](https://github.com/kerellpnz?tab=repositories).
